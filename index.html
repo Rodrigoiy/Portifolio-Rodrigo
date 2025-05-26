@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTIFÓLIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 z-50 w-full py-4 px-8 bg-black">
+    <div class="w-full flex items-center justify-between">
+      <!-- Logo -->
+      <div class="leading-tight">
+        <span class="block text-sm font-normal text-white">PORTIFÓLIO</span>
+        <span class="text-lime-400 text-3xl font-extrabold -mt-2">Rodrigo</span>
+      </div>
+
+      <!-- Menu -->
+      <nav class="flex items-center justify-center gap-10">
+        <a href="#" class="text-xl text-gray-400 hover:text-white hover:scale-125 transition duration-300 transform">Início</a>
+        <a href="#especialidades" class="text-xl text-gray-400 hover:text-white hover:scale-125 transition duration-300 transform ">Especialidades</a>
+        <a href="#sobre" class="text-xl text-gray-400 hover:text-white hover:scale-125 transition duration-300 transform">Sobre</a>
+        <a href="#projetos" class="text-xl text-gray-400 hover:text-white hover:scale-125 transition duration-300 transform">Projetos</a>
+      </nav>
+
+      <!-- Botão Contato -->
+      <div>
+        <a href="#contato" class="bg-lime-400 hover:bg-lime-300 text-black px-6 py-4 rounded-full font-semibold transition">
+          Contato
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 pb-12 px-6 bg-gradient-to-r from-black to-gray-900"><!-- pb-6 para mudar a distancia da borda -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 mt-6">Olá, eu sou Rodrigo</h1>
+    <p class="text-lg md:text-xl text-gray-400">Desenvolvedor Full-Stack com foco em Web.</p>
+    <a href="#projetos" class="mt-6 inline-block px-6 py-3 bg-lime-400 text-black rounded-full hover:bg-lime-300 transition font-semibold">Ver Projetos</a>
+  </section>
+
+  <!-- Especialidades --> <!--mt-4-->
+  <section id="especialidades" class="py-16 px-8 pt-24">
+    <h2 class="text-3xl font-bold mb-12 mt-4 text-center transform -translate-y-6">Especialidades</h2> <!-- transform acabou não sendo necessário / "-translate-y-6" está diminuindo a distancia entre o texto Especialidades da borda -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+  <div class="flex justify-center">
+    <div class="flex flex-col w-fit items-center gap-2 hover:scale-125 transition duration-300 transform">
+      <p class="text-xl">HTML</p>
+      <img src="imagens/iconeHTML.png" alt="HTML" class="w-17 h-16" />
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <div class="flex flex-col w-fit items-center gap-2 hover:scale-125 transition duration-300 transform">
+      <p class="text-xl">CSS / Tailwind</p>
+      <img src="imagens/iconeCSS.png" alt="CSS" class="w-17 h-16" />
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <div class="flex flex-col w-fit items-center gap-2 hover:scale-125 transition duration-300 transform">
+      <p class="text-xl">JavaScript</p>
+      <img src="imagens/iconeJS.png" alt="JavaScript" class="w-18 h-16" />
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <div class="flex flex-col w-fit items-center gap-2 hover:scale-125 transition duration-300 transform">
+      <p class="text-xl">PHP / Laravel</p>
+      <img src="imagens/iconePHP.png" alt="PHP" class="w-17 h-16" />
+    </div>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-20 px-8 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-8 mt-10 text-center -translate-y-8">Sobre mim</h2>
+    <div class="max-w-3xl mx-auto text-center text-gray-300 -translate-y-3 -mb-10">
+      <p>Olá! Meu nome é Rodrigo, desenvolvedor web em formação com mais de um ano de estudos em Análise e Desenvolvimento de Sistemas. Estou em busca da minha primeira oportunidade como estagiário na área Full Stack. Tenho experiência prática em desenvolvimento de aplicações web, usando Laravel, PHP, HTML, CSS, JavaScript e MySQL.</p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-20 px-8">
+    <h2 class="text-3xl font-bold mb-12 mt-2 text-center">Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+     <!-- Projeto 1: Conversor de Moedas -->
+  <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-700">
+  <h3 class="text-2xl font-bold mb-3 text-lime-400">Conversor de Moedas</h3>
+  <p class="text-gray-300 mb-5 leading-relaxed">
+    Um conversor de moedas que utiliza a API ExchangeRate-API para conversão em tempo real.<br />
+    Desenvolvido com <strong>HTML</strong>, <strong>Tailwind CSS</strong> e <strong>JavaScript</strong>.
+  </p>
+  <a
+    href="https://conversor-de-moedas-24gpjontf-rodrigoiys-projects.vercel.app/" 
+    class="inline-block bg-lime-500 text-black px-5 py-3 rounded-lg font-semibold shadow-md hover:bg-lime-400 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-1 transition" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+</div>
+
+      <!-- Projeto 2:  -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-700">
+        <h3 class="text-2xl font-bold mb-3 text-lime-400">Projeto 2</h3>
+        <p class="text-gray-300 mb-5 leading-relaxed">Descrição breve do projeto. Tecnologias: PHP, Laravel</p>
+        <a
+    href=""
+    class="inline-block bg-lime-500 text-black px-5 py-3 rounded-lg font-semibold shadow-md hover:bg-lime-400 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-1 transition" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entre em Contato -->
+<section id="contato" class="py-20 px-8 bg-gray-900">
+  <h2 class="text-3xl font-bold mb-8 text-center">Entre em Contato</h2>
+  <form action="https://formsubmit.co/issamu.rodrigo@gmail.com" method="POST" class="max-w-xl mx-auto grid gap-6">
+    <input type="hidden" name="_captcha" value="false" placeholder="Nome" required class="px-4 py-2 rounded bg-black border border-gray-600 text-white" />
+    <input type="hidden" name="_next" value="https://portifolio-rodrigo-rodrigoiys.vercel.app/obrigado.html" placeholder="E-mail" required class="px-4 py-2 rounded bg-black border border-gray-600 text-white"/>
+    <!-- Text Area -->
+   <textarea
+    name="mensagem"
+    placeholder="Digite sua mensagem aqui..."
+    rows="4"
+    required
+    class="w-full px-4 py-3 rounded-md bg-black border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lime-400 focus:border-lime-400 resize-y min-h-[80px] max-h-[200px] transition duration-300"></textarea>
+    <button type="submit" class="bg-lime-400 hover:bg-lime-300 text-black px-6 py-2 rounded-full font-semibold transition">Enviar</button>
+    <!-- Contatos Pessoais -->
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="https://github.com/Rodrigoiy" target="_blank" rel="noopener noreferrer"
+         class="text-gray-500 hover:text-gray-400 font-semibold transition transform hover:scale-105">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/rodrigoissamu/" target="_blank" rel="noopener noreferrer"
+         class="text-blue-400 hover:text-blue-300 font-semibold transition transform hover:scale-105">
+        Linkedin
+      </a>
+      <a href=" http://wa.me/+5511911507724" target="_blank" rel="noopener noreferrer" 
+         class="text-lime-400 hover:text-lime-300 font-semibold transition transform hover:scale-105">
+        Whatsapp
+      </a>
+    </div>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 bg-black">
+    <p>&copy; 2025 Rodrigo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
